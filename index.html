@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8f2" />
+    <meta
+      name="description"
+      content="Meet MovieTime. A little space to watch together, stay in sync, and make movie night yours."
+    />
+    <title>MovieTime — Better together.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header wrap">
+      <a class="brand" href="#" aria-label="MovieTime home"
+        ><span class="brand-icon" aria-hidden="true">▶</span>movietime<span
+          class="brand-dot"
+          >.</span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#features">The good stuff</a
+        ><a href="#how-it-works">How it works</a><a href="#faq">FAQs</a>
+      </nav>
+      <a
+        class="button button-small button-outline"
+        href="https://apps.apple.com/us/app/movietime-together/id6834941668"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Get the app <span aria-hidden="true">↗</span></a
+      >
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="little-star" aria-hidden="true">✳</span> YOUR NEW
+            FAVORITE MOVIE NIGHT
+          </div>
+          <h1>Good movies.<br />Better <em>together.</em></h1>
+          <p class="hero-description">
+            Same scene. Same moment. Wherever you are.<br />MovieTime brings
+            your people together for a movie night that feels a little closer.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-dark"
+              href="https://apps.apple.com/us/app/movietime-together/id6834941668"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download on the App Store <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-note">
+            <span class="note-line"></span>Less “are you at 32:10?” More movie
+            night.
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          id="preview"
+          aria-label="Interactive MovieTime interface concept"
+        >
+          <span class="art-orbit orbit-one"></span
+          ><span class="art-orbit orbit-two"></span>
+          <div class="floating-label label-top">
+            <span class="status-dot"></span> Miles apart. In sync.
+          </div>
+          <div class="player-window">
+            <div class="window-top">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>MovieTime</span
+              ><span class="window-expand" aria-hidden="true">↗</span>
+            </div>
+            <div class="movie-screen">
+              <div
+                class="movie-landscape"
+                role="img"
+                aria-label="Illustrated sunset over a tranquil sea and coastal hills"
+              >
+                <span class="landscape-sun"></span
+                ><span class="landscape-sea"></span
+                ><span class="landscape-hill hill-far"></span
+                ><span class="landscape-hill hill-near"></span
+                ><span class="landscape-boat"></span>
+              </div>
+              <div class="screen-shade"></div>
+              <span class="scene-tag">TONIGHT'S PICK</span>
+              <div class="movie-title">
+                <span>A little escape.</span
+                ><small>A MovieTime interface preview</small>
+              </div>
+              <button
+                class="screen-play"
+                id="preview-play"
+                aria-label="Pause preview"
+              >
+                Ⅱ
+              </button>
+            </div>
+            <div class="player-bottom">
+              <div class="timeline"><span id="timeline-fill"></span></div>
+              <div class="player-controls">
+                <button id="control-play" aria-label="Pause preview">Ⅱ</button
+                ><span id="player-time">32:10</span
+                ><span class="duration">/ 1:42:00</span>
+                <div class="control-spacer"></div>
+                <span class="synced"
+                  ><span class="status-dot"></span> In sync</span
+                ><button
+                  id="subtitle-toggle"
+                  aria-label="Toggle preview subtitles"
+                  aria-pressed="false"
+                >
+                  CC
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="people-card">
+            <div class="people-top">
+              <span>Your movie-night crew</span
+              ><span class="live-pill">3 together</span>
+            </div>
+            <div class="people-row">
+              <div class="avatar avatar-one">J</div>
+              <div class="avatar avatar-two">S</div>
+              <div class="avatar avatar-three">A</div>
+              <div class="people-caption">
+                Different sofas.<br /><strong>Same good company.</strong>
+              </div>
+              <span class="heart" aria-hidden="true">♡</span>
+            </div>
+          </div>
+          <div class="floating-label label-bottom">
+            <span aria-hidden="true">✦</span> Your sofa is the best seat.
+          </div>
+          <span class="preview-caption"
+            >A little look at the experience. Try the controls.</span
+          >
+        </div>
+      </section>
+
+      <div class="promise-strip wrap">
+        <span>Made for the way we watch.</span>
+        <div><span aria-hidden="true">◉</span> One shared moment</div>
+        <div><span aria-hidden="true">⌁</span> Your own controls</div>
+        <div><span aria-hidden="true">♡</span> Your favorite people</div>
+      </div>
+
+      <section class="features wrap" id="features">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">SMALL DETAILS. BIG DIFFERENCE.</span>
+            <h2>All the movie.<br />None of the <em>“wait, pause!”</em></h2>
+          </div>
+          <p>
+            A shared experience, with room to make it yours.<br />That's the
+            MovieTime way.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-visual sync-visual" aria-hidden="true">
+              <div class="sync-bar"><span>YOU</span><i></i><b>32:10</b></div>
+              <div class="sync-connector">↕</div>
+              <div class="sync-bar"><span>THEM</span><i></i><b>32:10</b></div>
+              <div class="visual-caption">
+                <span class="status-dot"></span> Right here, together
+              </div>
+            </div>
+            <span class="feature-number">01 / STAY IN THE MOMENT</span>
+            <h3>Perfectly in sync.</h3>
+            <p>
+              No countdowns or catching up. Shared playback keeps everyone in
+              the same scene.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-visual settings-visual" aria-hidden="true">
+              <div class="settings-mini">
+                <div>
+                  <span>Audio</span><b>English <span>⌄</span></b>
+                </div>
+                <div>
+                  <span>Subtitles</span><b>Italian <span>⌄</span></b>
+                </div>
+                <div>
+                  <span>Just for you</span><span class="toggle-on"></span>
+                </div>
+              </div>
+              <span class="settings-spark">✦</span>
+            </div>
+            <span class="feature-number">02 / MAKE IT YOURS</span>
+            <h3>Your watch, your way.</h3>
+            <p>
+              Choose your own audio and subtitles. Your preferences stay yours,
+              even when you watch together.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-visual together-visual" aria-hidden="true">
+              <div class="sofa">
+                <span class="sofa-person">J</span
+                ><span class="sofa-person second-person">S</span>
+                <div class="sofa-back"></div>
+                <div class="sofa-seat"></div>
+                <i></i><i></i>
+              </div>
+              <span class="together-star">✳</span
+              ><span class="together-heart">♡</span>
+            </div>
+            <span class="feature-number">03 / BRING YOUR PEOPLE</span>
+            <h3>Closer, from anywhere.</h3>
+            <p>
+              A long-distance date. A catch-up with friends. Turn an ordinary
+              evening into your kind of movie night.
+            </p>
+          </article>
+          <article class="feature-card local-file-card">
+            <div class="feature-visual local-file-visual" aria-hidden="true">
+              <div class="local-file-tile">
+                <span class="local-file-icon">▶</span>
+                <div><strong>movie.mkv</strong><span>On your device</span></div>
+                <span class="local-file-check">✓</span>
+              </div>
+              <div class="visual-caption">
+                <span class="status-dot"></span> Local playback. Original quality.
+              </div>
+            </div>
+            <div class="local-file-copy">
+              <span class="feature-number">04 / YOUR FILES, YOUR MOVIE NIGHT</span>
+              <h3>Your movie files. Not a stream.</h3>
+              <p>
+                Everyone watches their own local copy of the movie. MovieTime
+                syncs playback, not a video stream, so you skip screen-sharing
+                lag and streaming compression.
+              </p>
+              <p class="local-file-note">
+                Bring your own copy. MovieTime doesn't provide movies.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-section wrap" id="how-it-works">
+        <div class="how-intro">
+          <span class="eyebrow">LESS SETUP. MORE POPCORN.</span>
+          <h2>Movie night.<br /><em>Keep it simple.</em></h2>
+          <p>
+            The idea is easy: find something you love,<br />bring someone you
+            love, and press play.
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span>01</span>
+            <div>
+              <h3>Pick your movie</h3>
+              <p>A new discovery or your comfort-watch classic.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>02</span>
+            <div>
+              <h3>Get your people together</h3>
+              <p>Settle in for a shared MovieTime session.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span>03</span>
+            <div>
+              <h3>Make a night of it</h3>
+              <p>Press play. Stay in sync. Pass the popcorn.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq wrap" id="faq">
+        <div>
+          <span class="eyebrow">A FEW THINGS TO KNOW</span>
+          <h2>Before the<br /><em>opening credits.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What is MovieTime?<span>+</span></summary>
+            <p>
+              MovieTime is an app for shared movie watching, built around
+              synchronized playback and personal audio and subtitle controls.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can everyone use different subtitles?<span>+</span>
+            </summary>
+            <p>
+              Yes. Each person can choose their own subtitles and audio from the
+              tracks available in the movie, without changing anyone else's
+              preferences.
+            </p>
+          </details>
+          <details>
+            <summary>Is the player above the real app?<span>+</span></summary>
+            <p>
+              It's an interactive interface concept, not a live MovieTime
+              session. Try pausing the preview or switching on subtitles for a
+              taste of the experience.
+            </p>
+          </details>
+          <details>
+            <summary>Where can I download MovieTime?<span>+</span></summary>
+            <p>
+              MovieTime is available on the
+              <a
+                href="https://apps.apple.com/us/app/movietime-together/id6834941668"
+                target="_blank"
+                rel="noopener noreferrer"
+                >App Store</a
+              >. Follow the link to download the app and check device compatibility.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="closing wrap">
+        <span class="closing-star" aria-hidden="true">✳</span
+        ><span class="eyebrow">MAKE TIME FOR A MOVIE. AND EACH OTHER.</span>
+        <h2>See you at <em>movie time.</em></h2>
+        <p>Your people. Your pick. One shared moment.</p>
+        <a
+          class="button button-dark"
+          href="https://apps.apple.com/us/app/movietime-together/id6834941668"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Download on the App Store <span aria-hidden="true">↗</span></a
+        ><span class="closing-doodle" aria-hidden="true">♡</span>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <a class="brand" href="#" aria-label="MovieTime home"
+        ><span class="brand-icon" aria-hidden="true">▶</span>movietime<span
+          class="brand-dot"
+          >.</span
+        ></a
+      ><span>A little closer, one movie at a time.</span
+      ><small>© <span id="year">2026</span> MovieTime</small>
+    </footer>
+  </body>
+</html>
